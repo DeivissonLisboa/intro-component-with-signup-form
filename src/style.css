@@ -110,6 +110,24 @@ p {
   color: var(--clr-primary-red);
 }
 
+.form small.error {
+  text-align: right;
+  margin-top: -3%;
+  color: var(--clr-primary-red);
+  padding: 0;
+  display: none;
+}
+
+.form--input.error {
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.form--input.error + small.error {
+  display: block;
+}
+
 footer {
   display: none;
   position: absolute;
@@ -148,5 +166,9 @@ footer {
 
   .form--input {
     padding-left: 2rem;
+  }
+
+  .form small.error {
+    margin-top: -5%;
   }
 }
